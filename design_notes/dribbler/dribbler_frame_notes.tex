@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\title{Dribbler Frame Notes}
+
+\section{Overview}
+
+\section{Background}
+
+\section{Design}
+\subsection{Compliant Damping}
+
+\subsection{Tapered frame}
+We have big wheels which gives us not very much space in the back of the dribbler system. We want to have a wide dribbler roller so we must have a frame that is narrower in the back. The main challenge with this is how do we deliver power to the roller. Right now what we are thinking is that we simply have the gears go down the middle of the assembly and we have a gap in the roller. The alternative is that the middle shaft has two gears which gives us the displacement to power the roller from the edge.
+
+\subsection{Drone motor}
+We are using a drone motor to power our dribbler. In the past on thunderbots we purchased long thin motors from maxon, motors like this are out of our budget and so we opted for a cheaper drone motor that is shorter and wider than what is seen within the league.
+
+\subsection{Loading the bearings}
+
+\subsection{Rolling up to reveal a bar that prevents the fifth wheel phenomenom}
+This gives us a wall that keeps the ball from going in too far. The dribbler roller also moves up a fair amount meaning the ball can be drawn in a fair amount without needing to lift up the front of the robot.
+
+\section{Material considerations}
+We choose a polyamide 66 filament aka nylon because it has a very good ratio of flexural modulus to fatigue strength. Nylon filament is about twice as expensive as PLA per kilogram but the calculations for estimating stresses and printing the prototypes out of PLA show that PLA simply isn't a good material for this.
+
+The flexural properties of nylon varies on how much water it has drawn in. Immediately after printing the nylon will be dry and relatively stiff. After about a day in air (or a few minutes submerged underwater) the nylon will become conditioned and have the flexibility it was designed around.
+
+\section{Assembly}
+\subsection{3D Printing considerations}
+Use the print thin walls setting to make sure thin gaps aren't filled in by the slicer.
+
+The thickness of the springs is on the order of a few lines of filament you should keep this in mind when varying the thickness that if you don't increase it by enough you are making a less dense spring so the stiffness won't change exactly how you think and maybe this puts it a more risk of delaminating.
+
+Print it on its side such that the fibers run along the length of the springs.
+
+
+
+\section{Testing}
+\subsection{Failure modes}
+\subsubsection{Too much compression}
+\subsubsection{Too much tension}
+\subsubsection{Too much flex}
+
+We definitely have more problems with the with fatigue of the upper spring even when we make the actual width of the band two fibers thick rather than 3.
+
+\section{Past Designs}
+
+\section{Iterations}
+\subsection{Trying to make the spring system 2D by having one of them go above}
+
+\end{document}
